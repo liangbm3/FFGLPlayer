@@ -1,3 +1,7 @@
+# =============================================================================
+# C/C++ build artifacts
+# =============================================================================
+
 # Prerequisites
 *.d
 
@@ -19,6 +23,7 @@
 
 # Compiled Dynamic libraries
 *.so
+*.so.*
 *.dylib
 *.dll
 
@@ -37,5 +42,218 @@
 *.out
 *.app
 
-# debug information files
+# Debug information files
 *.dwo
+*.dwp
+
+# =============================================================================
+# CMake build artifacts
+# =============================================================================
+
+# CMake build directories
+build/
+Build/
+BUILD/
+out/
+cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# =============================================================================
+# FFmpeg specific
+# =============================================================================
+
+# FFmpeg build artifacts
+third_party/ffmpeg/build/
+third_party/ffmpeg/dist/
+third_party/ffmpeg/ffbuild/config.log
+third_party/ffmpeg/config.log
+third_party/ffmpeg/config.h
+third_party/ffmpeg/config.mak
+third_party/ffmpeg/ffbuild/config.mak
+third_party/ffmpeg/libavcodec/
+third_party/ffmpeg/libavdevice/
+third_party/ffmpeg/libavfilter/
+third_party/ffmpeg/libavformat/
+third_party/ffmpeg/libavutil/
+third_party/ffmpeg/libswresample/
+third_party/ffmpeg/libswscale/
+third_party/ffmpeg/ffmpeg
+third_party/ffmpeg/ffmpeg_g
+third_party/ffmpeg/ffplay
+third_party/ffmpeg/ffplay_g
+third_party/ffmpeg/ffprobe
+third_party/ffmpeg/ffprobe_g
+
+# =============================================================================
+# Development tools and IDEs
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vcproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide/
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Qt Creator
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# Code::Blocks
+*.cbp
+*.depend
+*.layout
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+
+# Eclipse CDT
+.autotools
+.cproject
+.metadata
+.project
+.settings/
+
+# =============================================================================
+# Package managers
+# =============================================================================
+
+# Conan
+conandata.yml
+conanfile.py
+conaninfo.txt
+conanbuildinfo.*
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+.vcpkg-root
+
+# =============================================================================
+# OS generated files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.fseventsd
+.TemporaryItems
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+*.lnk
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Runtime and temporary files
+# =============================================================================
+
+# Core dumps
+core
+core.*
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.pid
+*.lock
+*.bak
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Testing and documentation
+# =============================================================================
+
+# Test results
+test_results/
+test_reports/
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Documentation builds
+doc/html/
+doc/latex/
+docs/_build/
+site/
+
+# =============================================================================
+# Custom project files
+# =============================================================================
+
+# Local configuration files
+local.properties
+.env
+.env.local
+
+# User-specific files
+*.user
+*.local
