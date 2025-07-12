@@ -52,6 +52,12 @@ set(FFMPEG_LIBRARIES
 # 查找 glfw3 库（用于 OpenGL 窗口）
 find_package(glfw3 REQUIRED)
 
+# 启用测试
+enable_testing()
+
 # 添加源码子目录
 add_subdirectory(src)
+
+# 添加测试子目录
+add_subdirectory(tests)
 
